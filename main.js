@@ -1,8 +1,9 @@
 var DiscordClient = require('discord.io')
+var config = require('./config')
 var bot = new DiscordClient({
   autorun: true,
   email: 'pbjbot@gmail.com',
-  password: 'kerlogin'
+  password: config.password
 })
 
 bot.on('ready', function() {
